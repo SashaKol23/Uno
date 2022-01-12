@@ -6,6 +6,8 @@ namespace Uno
 {
     class DeckOfCards
     {
-
+        new  List<Card> unoDeck = new List<Card>;
+        
+             
     }
 }
