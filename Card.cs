@@ -4,15 +4,15 @@ using System.Text;
 
 namespace Uno
 {
-    public class Card 
+    public class Card
     {
-         public enum Color
+        public enum Color
         {
             Red,
             Yellow,
-            Dreen,
+            Green,
             Blue,
-            Dlac
+            Blac
         }
         public Color unoColor = Color.Red;
         public enum Number
@@ -35,6 +35,12 @@ namespace Uno
         }
         public Number unoNumber = Number.Zero;
 
-        
+        public Card(Color color,Number number)
+        {
+            unoColor = color;
+            unoNumber = number;
+        }
+
+
     }
 }
