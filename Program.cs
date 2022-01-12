@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Uno
 {
@@ -6,8 +7,9 @@ namespace Uno
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-            Console.ReadKey();
+            List<(int, int)> array = new List<(int, int)>();
+            array.Add((2, 4));
+            Console.WriteLine(array[0].Item2);
         }
     }
 }

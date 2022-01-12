@@ -4,29 +4,37 @@ using System.Text;
 
 namespace Uno
 {
-    public class Card
+    public class Card 
     {
-        public int namber;
-
-        public int colour;
-        enum colors
+         public enum Color
         {
             Red,
             Yellow,
-            Green,
+            Dreen,
             Blue,
-            Black
+            Dlac
         }
-        public int abiliti;
-        enum abiliti
+        public Color unoColor = Color.Red;
+        public enum Number
         {
+            Zero,
+            One,
+            Two,
+            Three,
+            Four,
+            Five,
+            Six,
+            Seven,
+            Eight,
+            Nine,
             TakeTwo,
-            TakeFour,
             Apass,
             Uturn,
+            TakeFour,
             ColorSelection
         }
+        public Number unoNumber = Number.Zero;
 
-
+        
     }
 }
