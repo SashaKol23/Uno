@@ -119,13 +119,6 @@ namespace Uno
             unoDeck.Add(new Card(Card.Color.Blac, Card.Number.ColorSelection));
             unoDeck.Add(new Card(Card.Color.Blac, Card.Number.ColorSelection));
         }
-
-       
-
-
-
-
-
     }
 
 }

@@ -7,10 +7,17 @@ namespace Uno
     {
         static void Main(string[] args)
         {
-            List<(int, int)> array = new List<(int, int)>();
-            array.Add((2, 4));
-            Console.WriteLine(array[0].Item2);
 
+            DeckOfCards deck = new DeckOfCards();
+            deck.creait();
+            Random randomDeck = new Random();
+            
+            for (int i =0; i < deck.unoDeck.Count; i++)
+            {
+                Console.WriteLine(i);
+                Console.WriteLine($"{deck.unoDeck[i].unoColor} {deck.unoDeck[i].unoNumber}");
+            }
+            
         }
     }
 }
